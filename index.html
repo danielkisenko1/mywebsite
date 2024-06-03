@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Website</title>
     <link rel="stylesheet" href="styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blackjack</title>
 </head>
 <body>
     <header>
-        <h1>My Blackjack Game</h1>
-        <p id="rules">For the rules of Blackjack: https://bicyclecards.com/how-to-play/blackjack/</p>
-        <p id="creator">Daniel Kisenko ICS3U</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <button type="submit" onclick="restartGame()" id="restartButton">New Game</button><br><br>
-        <input type="text" id="betAmount">
-        <input type="submit" value="Bet" id="betButton" onclick="bet()"><br>
+    
+    <main>
+        <section id="home">
+            <h1>Welcome to My Info Website</h1>
+            <p>This is a brief introduction to the website.</p>
+        </section>
         
-        <p class='output' id="betDisplay"></p>
-
-        <button type="button" id='shuffleButton' onclick="shuffle()">Shuffle the Cards</button><br>
-
-        <p class='output' id="shuffleDisplay"></p>
-
-        <button type="button" id='newCardsButton' onclick="newCards()">Deal the Cards</button><br>
-
-
-        <b><p class='output' id="dealerDisplayHand"></p></b>
-        <p class='output' id="dealerDisplaySum"></p>
-        <b><p class='output' id="userDisplayHand"></p></b>
-        <p class='output' id="userDisplaySum"></p>
-
-        <b><p class='output' id="feedback"></p></b>
-        <p class='output' id="firstHand"></p>
-        <p class='output' id="secondHand"></p>
-        <b><p class='output' id="payout"></p></b>
-
-
-        <button class='green'type="button" onclick="hit()" id="hitButton">Hit</button>
-        <button class='red'type="button" id='standButton' onclick="stand()">Stand</button><br><br>
-        <button type="button" id='doubleDownButton' onclick="doubleDown()">Double Down</button>
-        <button type="button" id='splitButton' onclick="split()">Split</button><br><br>
-    </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about the website or the person/company behind it.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details about the services offered.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact information or a contact form.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Info Website. All rights reserved.</p>
+    </footer>
 </body>
-<script src="scripts.js"></script>
 </html>
-
-<!--MADE BY DANIEL KISENKO-->
